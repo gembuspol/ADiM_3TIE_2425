@@ -22,11 +22,13 @@
             <br>
             <input type="radio" name="temat" value="jak zdać prawo jazdy za pierwszy razem">O prawie jazdy
             <br>
+            
             <input type="submit" value="Wyslij dane">
         </form>
         <?php
             if($_SERVER["REQUEST_METHOD"] == "GET"){
                 if(empty($_GET["rozmowca"])){
+                    
                     echo "Brak rozmowcy";
                 }else{
                     echo "Rozmawia: ".$_GET["rozmowca"]." na temat: ".$_GET["temat"];
